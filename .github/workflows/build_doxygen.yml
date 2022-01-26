@@ -9,6 +9,8 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
       - uses: actions/checkout@v2
         with:
           submodules: "recursive"
